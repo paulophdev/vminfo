@@ -7,34 +7,34 @@ import Imagem04 from "../../img/icons/04.png";
 
 export default function Services() {
   return (
-    <Container>
-      <h1 className="title-section">Serviços</h1>
-      <p className="text-section">
+    <Container className="pt-5 pb-5" id="services">
+      <h1 className="title-section text-center">Serviços</h1>
+      <p className="text-section text-center mb-5">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </p>
       <Row>
-        <Col lg={3} sm={6}>
+        <Col lg={3} sm={6} className="text-center">
           <Image src={Imagem01} alt="Formatação" />
           <h4 className="subtitle-section">Formatação</h4>
           <p className="text-section">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </p>
         </Col>
-        <Col lg={3} sm={6}>
+        <Col lg={3} sm={6} className="text-center">
           <Image src={Imagem02} alt="Manutenção" />
           <h4 className="subtitle-section">Manutenção</h4>
           <p className="text-section">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </p>
         </Col>
-        <Col lg={3} sm={6}>
+        <Col lg={3} sm={6} className="text-center">
           <Image src={Imagem03} alt="Limpeza" />
           <h4 className="subtitle-section">Limpeza</h4>
           <p className="text-section">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </p>
         </Col>
-        <Col lg={3} sm={6}>
+        <Col lg={3} sm={6} className="text-center">
           <Image src={Imagem04} alt="Montagem" />
           <h4 className="subtitle-section">Montagem</h4>
           <p className="text-section">

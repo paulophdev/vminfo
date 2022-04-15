@@ -3,7 +3,7 @@ import { Header } from "../../styles/styles";
 
 export default function Navigation() {
   return (
-    <Header>
+    <Header id="home">
       <Navbar expand="lg">
         <Container>
           <Navbar.Brand href="#home">
@@ -14,10 +14,7 @@ export default function Navigation() {
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav" className="justify-content-end">
             <Nav>
-              <Nav.Link href="#home" className="active">
-                Home
-              </Nav.Link>
-              <Nav.Link href="#about">Sobre</Nav.Link>
+              <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#services">Serviços</Nav.Link>
               <Nav.Link href="#gallery">Galeria</Nav.Link>
               <Nav.Link href="#contact">Contato</Nav.Link>

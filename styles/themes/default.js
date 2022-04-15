@@ -6,5 +6,6 @@ export default {
     secondary: "#DCCCBB",
     light: "#fff",
     dark: "#333",
+    grey: "#666",
   },
 };

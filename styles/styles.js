@@ -32,7 +32,7 @@ export const Header = styled.header`
 
   @media (min-width: 992px) {
     nav {
-      position: fixed;
+      position: absolute;
       top: 0;
       left: 0;
       right: 0;
@@ -49,6 +49,8 @@ export const Header = styled.header`
 `;
 
 export const Section = styled.section`
+  position: relative;
+
   .carousel-item img {
     height: 100%;
     object-fit: cover;
@@ -132,6 +134,144 @@ export const Section = styled.section`
     .carousel-indicators [data-bs-target] {
       width: 5px;
       height: 20px;
+    }
+  }
+`;
+
+export const GallerySection = styled.div`
+  background: ${(props) => props.theme.colors.secondary};
+`;
+
+export const ItemGallery = styled.div`
+  margin-bottom: 30px;
+  text-align: center;
+
+  img {
+    object-fit: cover;
+    border: 2px solid #fff !important;
+  }
+`;
+
+export const Content = styled.div`
+  display: flex;
+  justify-content: center;
+
+  .row {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid ${(props) => props.theme.colors.primary};
+    border-radius: 5px;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  input {
+    height: 40px;
+  }
+`;
+
+export const ButtonForm = styled.button`
+  background-color: ${(props) => props.theme.colors.primary};
+  padding: 8px 20px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+`;
+
+export const Foot = styled.footer`
+  background: ${(props) => props.theme.colors.dark};
+  position: relative;
+
+  h1,
+  p,
+  a,
+  h2 {
+    color: ${(props) => props.theme.colors.light};
+  }
+
+  h1 span {
+    color: ${(props) => props.theme.colors.primary};
+  }
+
+  h1 small {
+    font-size: 12px;
+  }
+
+  .footer-midias a + a {
+    margin-left: 10px;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-nav a {
+    margin-bottom: 10px;
+    color: ${(props) => props.theme.colors.light};
+    font-weight: bold;
+  }
+
+  .footer-nav a:hover {
+    color: ${(props) => props.theme.colors.light};
+  }
+
+  .footer-nav img {
+    filter: invert(100%);
+  }
+
+  .footer-nav div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-nav div a {
+    margin-left: 5px;
+  }
+
+  .return-top {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 43px;
+    cursor: pointer;
+  }
+`;
+
+export const Whatsapp = styled.div`
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+
+  animation: float 3s ease-in-out infinite;
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-25px);
+    }
+    100% {
+      transform: translateY(0);
     }
   }
 `;

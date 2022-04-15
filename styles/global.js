@@ -12,6 +12,20 @@ const GlobalStyle = createGlobalStyle`
     a {
         text-decoration: none;
     }
+
+    .subtitle-section {
+        color: ${(props) => props.theme.colors.primary};
+        text-transform: uppercase;
+    }
+
+    .text-section {
+        color: ${(props) => props.theme.colors.grey};
+        text-transform: uppercase;
+    }
+
+    .title-section {
+        text-transform: uppercase;
+    }
 `;
 
 export default GlobalStyle;

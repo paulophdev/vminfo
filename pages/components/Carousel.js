@@ -18,14 +18,14 @@ export default function Slide() {
         <Carousel.Item>
           <Image src={Imagem03} alt="Third slide" layout="fill" />
         </Carousel.Item>
-        <div className="container-flut">
-          <div className="content-flut">
-            <p>Seja Bem Vindo(a)</p>
-            <h1>Deixe seu PC nas mãos de quem sabe o que faz</h1>
-            <a href="#contato">Fale Comigo</a>
-          </div>
-        </div>
       </Carousel>
+      <div className="container-flut">
+        <div className="content-flut">
+          <p>Seja Bem Vindo(a)</p>
+          <h1>Deixe seu PC nas mãos de quem sabe o que faz</h1>
+          <a href="#contato">Fale Comigo</a>
+        </div>
+      </div>
     </Section>
   );
 }
