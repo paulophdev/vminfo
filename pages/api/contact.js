@@ -1,11 +1,11 @@
 export default function handler(req, res) {
   let nodemailer = require("nodemailer");
   const transporter = nodemailer.createTransport({
-    port: 465,
-    host: "smtp.gmail.com",
+    port: 587,
+    host: "mail.performarsolucoes.com.br",
     auth: {
-      user: "paulophdev@gmail.com",
-      pass: "paulo3660",
+      user: "contato@performarsolucoes.com.br",
+      pass: "xtdc1227",
     },
     secure: true,
   });
