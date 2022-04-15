@@ -28,9 +28,9 @@ export default function handler(req, res) {
 
   transporter.sendMail(mailData, function (err, info) {
     if (err) {
-      res.status(400).json({ name: "Falha." });
+      res.status(400).json({ err });
     } else {
-      res.status(200).json({ name: "Sucesso!" });
+      res.status(200).json({ msg: "Sucesso!" });
     }
   });
 }

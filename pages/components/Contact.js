@@ -46,6 +46,7 @@ export default function Contact() {
       },
       body: JSON.stringify(data),
     }).then((res) => {
+      console.log(res);
       if (res.status === 200) {
         window.alert("Envio concluído com sucesso!");
         setName("");
