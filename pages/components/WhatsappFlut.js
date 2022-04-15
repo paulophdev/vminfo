@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import ImgFlut from "../../img/icons/WhatsappFlut.png";
+import ImgFlut from "../../img/icons/whatsappFlut.png";
 import { Whatsapp } from "../../styles/styles";
 
-export default function WhatsappFlut() {
+export default function WhatsappFt() {
   return (
     <Whatsapp>
       <Link href="#">
