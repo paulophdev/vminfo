@@ -7,6 +7,7 @@ export default function handler(req, res) {
     host: "smtp.gmail.com",
     service: "gmail",
     auth: {
+      type: "OAuth2",
       user: "paulophdev@gmail.com",
       pass: "paulo3660",
     },
