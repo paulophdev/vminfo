@@ -7,10 +7,7 @@ export default function handler(req, res) {
       user: "paulophdev@gmail.com",
       pass: "paulo3660",
     },
-    secure: false,
-    tls: {
-      rejectUnauthorized: false,
-    },
+    secure: true,
   });
 
   const mailData = {
