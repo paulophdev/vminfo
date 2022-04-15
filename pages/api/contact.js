@@ -1,17 +1,16 @@
-require("dotenv").config();
-
 export default function handler(req, res) {
   let nodemailer = require("nodemailer");
   const transporter = nodemailer.createTransport({
     port: 465,
     host: "smtp.gmail.com",
-    service: "gmail",
     auth: {
-      type: "OAuth2",
       user: "paulophdev@gmail.com",
       pass: "paulo3660",
     },
-    secure: true,
+    secure: false,
+    tls: {
+      rejectUnauthorized: false,
+    },
   });
 
   const mailData = {
