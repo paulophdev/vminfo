@@ -1,12 +1,12 @@
 export default function handler(req, res) {
   let nodemailer = require("nodemailer");
   const transporter = nodemailer.createTransport({
-    host: "smtp.mailtrap.io",
-    port: 2525,
+    host: "smtp-relay.sendinblue.com",
+    port: 587,
     secure: false,
     auth: {
-      user: "334d982d2ec0bb",
-      pass: "daec23443013dc",
+      user: "paulophdev@gmail.com",
+      pass: "maxT78XA0cf25wQj",
     },
   });
   const mailData = {
