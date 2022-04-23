@@ -1,13 +1,12 @@
 export default function handler(req, res) {
   let nodemailer = require("nodemailer");
   const transporter = nodemailer.createTransport({
-    service: "gmail",
-    host: "smtp.gmail.com",
-    port: 465,
+    host: "smtp-relay.sendinblue.com",
+    port: 587,
     secure: true,
     auth: {
       user: "paulophdev@gmail.com",
-      pass: "paulo3660",
+      pass: "maxT78XA0cf25wQj",
     },
   });
 
